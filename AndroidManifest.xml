@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="ahp.thesis.code" android:versionCode="1" android:versionName="1.0">
+	<application android:icon="@drawable/ahp" android:label="@string/app_name"
+		android:debuggable="true">
+
+		<!-- Splash Screen -->
+		<activity android:name="Splash_Screen" android:theme="@style/Theme.Transparent">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+				<category android:name="android.intent.category.LAUNCHER"></category>
+			</intent-filter>
+		</activity>
+
+		<activity android:name="Main" android:label="@string/app_name"
+			android:configChanges="locale" />
+		<activity android:name=".Decisions_List"
+			android:configChanges="locale" />
+		<activity android:name=".Tab_Layout" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="locale" />
+		<activity android:name=".Tab_Summary" android:configChanges="locale" />
+		<activity android:name=".Tab_Alternatives"
+			android:configChanges="locale" />
+		<activity android:name=".Tab_Criteria" android:configChanges="locale" />
+		<activity android:name=".Tab_Adjust" android:configChanges="locale" />
+		<activity android:name=".Tab_Weights" android:configChanges="locale" />
+		<activity android:name=".Tab_Decision" android:configChanges="locale" />
+		<activity android:name=".Database_Title" />
+	</application>
+	<uses-sdk android:minSdkVersion="7" />
+</manifest> 
